@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteRule Controller/Login Controller/C_Login.php
+RewriteRule Controller/Accueil Controller/C_Accueil.php
+RewriteRule Controller/Client Controller/C_Client.php
+RewriteRule Controller/Paiement Controller/C_Paiement.php
+RewriteRule Controller/Archive Controller/C_Archive.php
+
+RewriteRule Controller/PDF/([0-9]+)/([A-Z]+) Controller/C_PDF.php?id=$1&type=$2 [NC,L]
